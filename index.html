@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODULE</title>
+    
+</head>
+<body onLoad="circle()">
+
+    <canvas id="circle"></canvas>
+    <div>
+    <button id="R" onclick="rghtRed(4)">Right - RED</button>
+    <button id="L" onclick="lftRed(4)">Left - RED</button>
+    <button id="U" onclick="uPRed(4)">Up - RED</button>
+    <button id="D" onclick="dwnRed(4)">Down - RED</button>
+    </div>
+    
+    <div>
+        <button id="R" onclick="rghtOrange(4)">Right</button>
+        <button id="L" onclick="lftOrange(4)">Left</button>
+        <button id="D" onclick="dwnOrange(4)">Down</button>
+        <button id="U" onclick="uPOrange(4)">Up</button>
+     </div>
+    
+    <!-- <form><input type="number" id='RadRED' oninput="radiusRED(this)"> RED </form>   
+   
+    <button id="ONE">mode ONE</button> 
+    <button id="TWO">mode TWO</button> --> 
+
+    <div id='RadRed'></div>
+
+    <div>
+        <button id="+Red" onclick="plusRed()">+ RED Radius</button>
+        <button id="-Red" onclick="minusRed()">- RED Radius</button>
+    </div>
+
+    <div id='RadOrange'></div>
+
+    <div>
+        <button id="+Orange" onclick="plusOrange()">+ ORANGE Radius</button>
+        <button id="-Orange" onclick="minusOrange()">- ORANGE Radius</button>
+    </div>
+
+    <div id="XRed"></div>
+
+    <div>
+        <button id="+RedX" onclick="plusRedX()">+ RED X</button>
+        <button id="-RedX" onclick="minusRedX()">- RED X</button>
+    </div>
+
+    <div id="YRed"></div>
+
+    <div>
+        <button id="+RedY" onclick="plusRedY()">+ RED Y</button>
+        <button id="-RedY" onclick="minusRedY()">- RED Y</button>
+    </div>
+
+
+   
+    <audio id='soundOne' src="circle.mp3"></audio>
+    <audio id='soundOne1' src='circle1.mp3'></audio>
+    <audio id='soundOne2' src='circle2.mp3'></audio>
+    <script  src="js.js"></script>
+    <script  src="physic.js"></script>
+    <script  src="wallCollis.js"></script>
+    <script  src="moving.js"></script>
+    
+
+</body>
+<style>
+    #circle{
+        border: 1px dashed black;
+    }
+    
+</style>
+</html>
